@@ -1,0 +1,1 @@
+Hoisting => it is a concpet of JS which is used in Function that means, we can call the function before it is initialized;

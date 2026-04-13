@@ -37,18 +37,36 @@
 
 
 // ...rest V/s ...spread
-    let arr = [10,20,30,40];
-    let arr2 = [100,200,300,400];
+    // let arr = [10,20,30,40];
+    // let arr2 = [100,200,300,400];
     
-    let [...rest] = arr;
-    let [...rest1] = arr2;
-    console.log(rest);
-    console.log(rest1);
+    // let [...rest] = arr;
+    // let [...rest1] = arr2;
+    // console.log(rest);
+    // console.log(rest1);
 
-    const num = [...rest];
-    const num1 = [...arr2];
+    // const num = [...rest];
+    // const num1 = [...arr2];
 
-    console.log(` this is direct spread ${num1}`);
-    console.log(`this is rest and then spread ${num}`);
-    console.log(num);
-    console.log(num1);
+    // console.log(` this is direct spread ${num1}`);
+    // console.log(`this is rest and then spread ${num}`);
+    // console.log(num);
+    // console.log(num1);
+
+    // Hoisting => it is a concpet of JS which is used in Function that means, 
+    // we can call the function before it is initialized;
+
+    // normal function:
+    // console.log(addnumber(12,13));
+    // function addnumber(num1,num2){
+    //     return num1+num2;
+    // }
+
+    // function expression: storng the funciton in a  variable
+
+   
+    const addnumber = function(num1,num2){
+        return num1+num2;
+    }
+    console.log(addnumber(12,13));
+
