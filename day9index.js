@@ -118,9 +118,31 @@
 // console.log(multiply());
 
 // const testing = 
-console.log((()=> ({user1: {name: "ashish",age: 20,city: "bangalore",marks: {ADA:80,NA:100,IC:60,PP:100}},
-user2: {name: "mayank",age: 21,city: "kurukshetra",marks: {ADA:90,NA:90,IC:90,PP:90}},
-user3: {name: "ansh",age: 19,city: "bangalore",marks: {ADA:100,NA:100,IC:100,PP:100}},
-user4: {name: "laya",age: 18,city: "nepal",marks: {ADA:100,NA:90,IC:100,PP:100}}}))());
+// console.log((()=> ({user1: {name: "ashish",age: 20,city: "bangalore",marks: {ADA:80,NA:100,IC:60,PP:100}},
+// user2: {name: "mayank",age: 21,city: "kurukshetra",marks: {ADA:90,NA:90,IC:90,PP:90}},
+// user3: {name: "ansh",age: 19,city: "bangalore",marks: {ADA:100,NA:100,IC:100,PP:100}},
+// user4: {name: "laya",age: 18,city: "nepal",marks: {ADA:100,NA:90,IC:100,PP:100}}}))());
 // const testing = ()=> ({name: "ashish", age: 20,city: "bangalore",marks: { ADA:80, NA:100,IC:60,PP:100}})
 // console.log(testing())
+
+
+// Callback hellll is is nighbare when comes to debugging 
+// function placeOrder(item, onSuccess, onFailure) {
+//     console.log(`Placing order for ${item}...`);
+//     const isAvailable = Math.random() > 0.2;
+//     isAvailable ? onSuccess(item) : onFailure(item);
+//   }
+//   function assignRider(item, onAssigned) {
+//     console.log(`Finding rider for ${item}...`);
+//     onAssigned("Raju");
+//   }
+//   function trackDelivery(rider, onDelivered) {
+//     console.log(`${rider} is on the way...`);
+//     onDelivered();
+//   }
+//   function sendFeedbackForm() {
+//     console.log("How was your order? Rate us!");
+//   }
+//   // --- Execution ---
+//   placeOrder("Biryani",(item) => {assignRider(item, (rider) => {trackDelivery(rider, () => {sendFeedbackForm();});});},
+//                         (item) => {console.log(`Sorry, ${item} is unavailable.`);});
