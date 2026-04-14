@@ -65,8 +65,61 @@
     // function expression: storng the funciton in a  variable
 
    
-    const addnumber = function(num1,num2){
-        return num1+num2;
-    }
-    console.log(addnumber(12,13));
+    // const addnumber = function(num1,num2){
+    //     return num1+num2;
+    // }
+    // console.log(addnumber(12,13));
 
+// 3) Arrow function:
+//  syntax: const variable_name = ()=> {
+// }
+
+// normal arrow syntax
+// const square = (n)=> {
+//     return n*n;
+// };
+
+// // arrow function when only single item is returned
+// const square1 = (n)=> n*n;;
+
+// // arrow fucntion when onyl single item is returned and single parameter is passed.
+// const square2 = n=> n*n;;
+// console.log(square(10));
+// console.log(square1(11));
+// console.log(square2(12));
+
+// Arrow fucntions with objects
+
+// const multiply = ()=> ({name: "ashish",age: 20})
+
+// console.log(multiply());
+
+//Types of function and there output  Square of two numbers:
+// function squarenumber(n){ 
+//     return n*n;
+// }
+
+// const squarenum = function(x){
+//     return x*x;
+// }
+
+// const squareN = n => n*n;
+
+// console.log(squarenumber(12))
+// console.log(squarenum(13))
+// console.log(squareN(14))
+
+// let lst = NaN;
+// console.log(lst);
+
+// Arrow fucntions with objects
+
+// const multiply = ()=> ({name: "ashish",age: 20})
+// console.log(multiply());
+
+const testing = ()=> ({user1: {name: "ashish",age: 20,city: "bangalore",marks: {ADA:80,NA:100,IC:60,PP:100}},
+user2: {name: "mayank",age: 21,city: "kurukshetra",marks: {ADA:90,NA:90,IC:90,PP:90}},
+user3: {name: "ansh",age: 19,city: "bangalore",marks: {ADA:100,NA:100,IC:100,PP:100}},
+user4: {name: "laya",age: 18,city: "nepal",marks: {ADA:100,NA:90,IC:100,PP:100}}})
+// const testing = ()=> ({name: "ashish", age: 20,city: "bangalore",marks: { ADA:80, NA:100,IC:60,PP:100}})
+console.log(testing())
