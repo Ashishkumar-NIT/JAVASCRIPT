@@ -117,9 +117,10 @@
 // const multiply = ()=> ({name: "ashish",age: 20})
 // console.log(multiply());
 
-const testing = ()=> ({user1: {name: "ashish",age: 20,city: "bangalore",marks: {ADA:80,NA:100,IC:60,PP:100}},
+// const testing = 
+console.log((()=> ({user1: {name: "ashish",age: 20,city: "bangalore",marks: {ADA:80,NA:100,IC:60,PP:100}},
 user2: {name: "mayank",age: 21,city: "kurukshetra",marks: {ADA:90,NA:90,IC:90,PP:90}},
 user3: {name: "ansh",age: 19,city: "bangalore",marks: {ADA:100,NA:100,IC:100,PP:100}},
-user4: {name: "laya",age: 18,city: "nepal",marks: {ADA:100,NA:90,IC:100,PP:100}}})
+user4: {name: "laya",age: 18,city: "nepal",marks: {ADA:100,NA:90,IC:100,PP:100}}}))());
 // const testing = ()=> ({name: "ashish", age: 20,city: "bangalore",marks: { ADA:80, NA:100,IC:60,PP:100}})
-console.log(testing())
+// console.log(testing())
