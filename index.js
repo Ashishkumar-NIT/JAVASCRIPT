@@ -109,7 +109,7 @@
 // const arr2 = [...arr];
 // console.log(arr2);
 
-// why to user for of loop for Arrays
+// why to use for of loop for Arrays
 // const arr4 = [10, 20, 40, 60];
 
 // // spread operator
