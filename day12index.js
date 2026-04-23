@@ -51,28 +51,53 @@
 
 //--------------------- USING THE ARRAY filter method----------------------------
 
-const arr = [10,20,30,40,50];
-const newArr = arr.filter((num)=>num>=20);
-console.log(newArr);
+// const arr = [10,20,30,40,50];
+// const newArr = arr.filter((num)=>num>=20);
+// console.log(newArr);
 
-// user's defined function
+// // user's defined function
 
-Array.rototype.filtering = function(compare){
+// Array.prototype.filtering = function(compare){
 
-        let newArr = []
-        for(let num of this){
+//         let newArr = []
+//         for(let num of this){
 
-        if(compare(num)){
+//         if(compare(num)){
 
-            newArr.push(num)
-        }
-    }
-        return newArr;
-}
+//             newArr.push(num)
+//         }
+//     }
+//         return newArr;
+// }
 
-let newArrr = arr.filtering((num)=>num>=20);
-console.log(newArrr);
+// let newArrr = arr.filtering((num)=>num>=20);
+// console.log(newArrr);
 
-let arr2 = [199,299,399,499,599];
-let newArr2 = arr2.filtering((num)=>200);
-console.log(newArr2);
+// let arr2 = [199,299,399,499,599];
+// let newArr2 = arr2.filtering((num)=>200);
+// console.log(newArr2);
+
+
+//---------------------------- SET DATASTRUCTURE ------------------------------------
+const s0 =new Set();
+console.log(typeof s0); //set is a type of object
+
+let arr = [10,10,20,20,30,30,40,40,50,50];
+console.log(arr);
+
+const s1 = new Set(arr);
+console.log(s1);
+s1.add(60,60);
+console.log(s1);
+console.log(s1.has(20));
+console.log(s1.has(21));
+console.log(s1.delete(60));
+console.log(s1);
+console.log(s1.clear())
+console.log(s1);
+
+const email = ["ash@123","pash@123","bash@123","bail@123","ash@123","pash@123","bash@123"]
+// console.log(email);
+
+const nayaEmail =[...new Set(email)];
+console.log(nayaEmail);
